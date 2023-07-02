@@ -167,7 +167,9 @@ form.search__input {
     width: var(--icon-font-size) !important;
     height: var(--icon-font-size) !important;
     color: var(--title-color);
-    display: flex;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -233,18 +235,18 @@ main{
     align-self: stretch;
 }
 
-.none {display:none;}
+.none {display: none;}
 
 @media screen and (max-width: 767px){
     .shortcuts{
-        display: none;
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media screen and (max-width: 384px){
     .shortcuts{
-        display: none;
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 }
